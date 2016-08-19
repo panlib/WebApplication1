@@ -15,13 +15,13 @@ namespace WebApplication1.Controllers
         {
             return db.customer.ToList();
         }
-        public customer Get(int id)
+        public IHttpActionResult Get(int id)
         {
             foreach (customer cust in db.customer)
             {
-                if (cust.cust_id == id) return cust;
+                if (cust.cust_id == id) return Ok(cust);
             }
-            return null;
+            return NotFound();
         }
     }
 }
