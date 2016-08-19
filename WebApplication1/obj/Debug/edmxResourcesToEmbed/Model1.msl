@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Clima1_DBModelStoreContainer" CdmEntityContainer="Clima1_DBEntities">
+    <EntitySetMapping Name="customer">
+      <EntityTypeMapping TypeName="Clima1_DBModel.customer">
+        <MappingFragment StoreEntitySet="customer">
+          <ScalarProperty Name="cust_id" ColumnName="cust_id" />
+          <ScalarProperty Name="sir_name" ColumnName="sir_name" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="payed" ColumnName="payed" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phone1" ColumnName="phone1" />
+          <ScalarProperty Name="phone2" ColumnName="phone2" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="synoik" ColumnName="synoik" />
+          <ScalarProperty Name="tk" ColumnName="tk" />
+          <ScalarProperty Name="poli" ColumnName="poli" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="Field1" ColumnName="Field1" />
+          <ScalarProperty Name="Field2" ColumnName="Field2" />
+          <ScalarProperty Name="Field3" ColumnName="Field3" />
+          <ScalarProperty Name="Field4" ColumnName="Field4" />
+          <ScalarProperty Name="Field5" ColumnName="Field5" />
+          <ScalarProperty Name="edit" ColumnName="edit" />
+          <ScalarProperty Name="user" ColumnName="user" />
+          <ScalarProperty Name="contractor_name" ColumnName="contractor_name" />
+          <ScalarProperty Name="discount_id" ColumnName="discount_id" />
+          <ScalarProperty Name="doy_id" ColumnName="doy_id" />
+          <ScalarProperty Name="poli_id" ColumnName="poli_id" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="website" ColumnName="website" />
+          <ScalarProperty Name="fpa_zone_id" ColumnName="fpa_zone_id" />
+          <ScalarProperty Name="ship_type_id" ColumnName="ship_type_id" />
+          <ScalarProperty Name="paym_type_id" ColumnName="paym_type_id" />
+          <ScalarProperty Name="photos" ColumnName="photos" />
+          <ScalarProperty Name="offers" ColumnName="offers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,71 @@
+17/8/2016 2:28:14 μμ	This log contains information about the import schema operation into project 'Database1' on computer 'PANAGIOTIS-PC' by user 'PANAGIOTIS'.
+17/8/2016 2:28:15 μμ	Import of database schema has started.
+17/8/2016 2:28:18 μμ	Gathering error messages
+17/8/2016 2:28:18 μμ	Gathering credentials
+17/8/2016 2:28:18 μμ	Gathering logins
+17/8/2016 2:28:18 μμ	Gathering server role memberships
+17/8/2016 2:28:18 μμ	Gathering linked servers
+17/8/2016 2:28:18 μμ	Gathering linked server logins
+17/8/2016 2:28:18 μμ	Gathering routes
+17/8/2016 2:28:18 μμ	Gathering ddl triggers
+17/8/2016 2:28:18 μμ	Gathering encrypted and clr ddl triggers
+17/8/2016 2:28:18 μμ	Gathering event notifications
+17/8/2016 2:28:22 μμ	Gathering database options
+17/8/2016 2:28:22 μμ	Gathering users
+17/8/2016 2:28:22 μμ	Gathering roles
+17/8/2016 2:28:22 μμ	Gathering application roles
+17/8/2016 2:28:22 μμ	Gathering role memberships
+17/8/2016 2:28:22 μμ	Gathering filegroups
+17/8/2016 2:28:22 μμ	Gathering files
+17/8/2016 2:28:22 μμ	Gathering full-text catalogs
+17/8/2016 2:28:22 μμ	Gathering assemblies
+17/8/2016 2:28:22 μμ	Gathering certificates
+17/8/2016 2:28:22 μμ	Gathering asymmetric keys
+17/8/2016 2:28:22 μμ	Gathering symmetric keys
+17/8/2016 2:28:22 μμ	Gathering encrypted symmetric keys
+17/8/2016 2:28:22 μμ	Gathering schemas
+17/8/2016 2:28:22 μμ	Gathering XML schema collections
+17/8/2016 2:28:22 μμ	Gathering user-defined data types
+17/8/2016 2:28:22 μμ	Gathering user-defined types
+17/8/2016 2:28:22 μμ	Gathering partition functions
+17/8/2016 2:28:22 μμ	Gathering partition schemes
+17/8/2016 2:28:22 μμ	Gathering functions
+17/8/2016 2:28:22 μμ	Gathering encrypted functions
+17/8/2016 2:28:22 μμ	Gathering aggregates
+17/8/2016 2:28:22 μμ	Gathering procedures
+17/8/2016 2:28:22 μμ	Gathering encrypted procedures
+17/8/2016 2:28:22 μμ	Gathering tables
+17/8/2016 2:28:22 μμ	Gathering primary keys
+17/8/2016 2:28:22 μμ	Gathering unique constraints
+17/8/2016 2:28:22 μμ	Gathering foreign keys
+17/8/2016 2:28:22 μμ	Gathering default constraints
+17/8/2016 2:28:22 μμ	Gathering check constraints
+17/8/2016 2:28:22 μμ	Gathering views
+17/8/2016 2:28:22 μμ	Gathering encrypted views
+17/8/2016 2:28:22 μμ	Gathering indexes
+17/8/2016 2:28:22 μμ	Gathering statistics
+17/8/2016 2:28:22 μμ	Gathering full-text indexes
+17/8/2016 2:28:22 μμ	Gathering XML indexes
+17/8/2016 2:28:22 μμ	Gathering encrypted triggers
+17/8/2016 2:28:22 μμ	Gathering triggers
+17/8/2016 2:28:22 μμ	Gathering encrypted and clr ddl triggers
+17/8/2016 2:28:22 μμ	Gathering ddl triggers
+17/8/2016 2:28:22 μμ	Gathering synonyms
+17/8/2016 2:28:22 μμ	Gathering defaults
+17/8/2016 2:28:22 μμ	Gathering data constraint uddt bindings
+17/8/2016 2:28:22 μμ	Gathering rules
+17/8/2016 2:28:22 μμ	Gathering data constraint uddt bindings
+17/8/2016 2:28:22 μμ	Gathering message types
+17/8/2016 2:28:22 μμ	Gathering queues
+17/8/2016 2:28:22 μμ	Gathering contracts
+17/8/2016 2:28:23 μμ	Gathering services
+17/8/2016 2:28:23 μμ	Gathering routes
+17/8/2016 2:28:23 μμ	Gathering event notifications
+17/8/2016 2:28:23 μμ	Gathering remote service bindings
+17/8/2016 2:28:23 μμ	Gathering signatures
+17/8/2016 2:28:23 μμ	Gathering extended properties
+17/8/2016 2:28:25 μμ	Scanning project for duplicate elements
+17/8/2016 2:28:25 μμ	Finished duplicate element processing
+17/8/2016 2:28:25 μμ	Finished importing database.
+17/8/2016 2:28:25 μμ	A summary of the import was saved to the following location: C:\Users\PANAGIOTIS\Documents\Visual Studio 2015\Projects\WebApplication1\Database1\Import Schema Logs\Database1_20160817112814.log
+17/8/2016 2:28:25 μμ	Click Finish to continue...

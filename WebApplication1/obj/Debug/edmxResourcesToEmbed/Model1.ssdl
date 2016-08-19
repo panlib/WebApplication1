@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Clima1_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Clima1_DB.dbo.customer' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="cust_id" />
+      <PropertyRef Name="payed" />
+      <PropertyRef Name="edit" />
+    </Key>
+    <Property Name="cust_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sir_name" Type="varchar" MaxLength="50" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="payed" Type="bit" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="50" />
+    <Property Name="phone1" Type="varchar" MaxLength="50" />
+    <Property Name="phone2" Type="varchar" MaxLength="50" />
+    <Property Name="mobile" Type="varchar" MaxLength="50" />
+    <Property Name="synoik" Type="varchar" MaxLength="50" />
+    <Property Name="tk" Type="varchar" MaxLength="50" />
+    <Property Name="poli" Type="varchar" MaxLength="50" />
+    <Property Name="notes" Type="varchar" MaxLength="2000" />
+    <Property Name="code" Type="varchar" MaxLength="50" />
+    <Property Name="Field1" Type="varchar" MaxLength="50" />
+    <Property Name="Field2" Type="varchar" MaxLength="50" />
+    <Property Name="Field3" Type="varchar" MaxLength="50" />
+    <Property Name="Field4" Type="varchar" MaxLength="50" />
+    <Property Name="Field5" Type="varchar" MaxLength="50" />
+    <Property Name="edit" Type="bit" Nullable="false" />
+    <Property Name="user" Type="varchar" MaxLength="255" />
+    <Property Name="contractor_name" Type="varchar" MaxLength="50" />
+    <Property Name="discount_id" Type="smallint" />
+    <Property Name="doy_id" Type="smallint" />
+    <Property Name="poli_id" Type="smallint" />
+    <Property Name="country" Type="varchar" MaxLength="50" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="website" Type="varchar" MaxLength="50" />
+    <Property Name="fpa_zone_id" Type="int" />
+    <Property Name="ship_type_id" Type="smallint" />
+    <Property Name="paym_type_id" Type="smallint" />
+    <Property Name="photos" Type="varchar" MaxLength="500" />
+    <Property Name="offers" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityContainer Name="Clima1_DBModelStoreContainer">
+    <EntitySet Name="customer" EntityType="Self.customer" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [customer].[cust_id] AS [cust_id], 
+    [customer].[sir_name] AS [sir_name], 
+    [customer].[name] AS [name], 
+    [customer].[payed] AS [payed], 
+    [customer].[address] AS [address], 
+    [customer].[phone1] AS [phone1], 
+    [customer].[phone2] AS [phone2], 
+    [customer].[mobile] AS [mobile], 
+    [customer].[synoik] AS [synoik], 
+    [customer].[tk] AS [tk], 
+    [customer].[poli] AS [poli], 
+    [customer].[notes] AS [notes], 
+    [customer].[code] AS [code], 
+    [customer].[Field1] AS [Field1], 
+    [customer].[Field2] AS [Field2], 
+    [customer].[Field3] AS [Field3], 
+    [customer].[Field4] AS [Field4], 
+    [customer].[Field5] AS [Field5], 
+    [customer].[edit] AS [edit], 
+    [customer].[user] AS [user], 
+    [customer].[contractor_name] AS [contractor_name], 
+    [customer].[discount_id] AS [discount_id], 
+    [customer].[doy_id] AS [doy_id], 
+    [customer].[poli_id] AS [poli_id], 
+    [customer].[country] AS [country], 
+    [customer].[email] AS [email], 
+    [customer].[website] AS [website], 
+    [customer].[fpa_zone_id] AS [fpa_zone_id], 
+    [customer].[ship_type_id] AS [ship_type_id], 
+    [customer].[paym_type_id] AS [paym_type_id], 
+    [customer].[photos] AS [photos], 
+    [customer].[offers] AS [offers]
+    FROM [dbo].[customer] AS [customer]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

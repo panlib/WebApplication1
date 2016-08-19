@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Clima1_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Clima1_DB.dbo.customer' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="customer">
+          <Key>
+            <PropertyRef Name="cust_id" />
+            <PropertyRef Name="payed" />
+            <PropertyRef Name="edit" />
+          </Key>
+          <Property Name="cust_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sir_name" Type="varchar" MaxLength="50" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="payed" Type="bit" Nullable="false" />
+          <Property Name="address" Type="varchar" MaxLength="50" />
+          <Property Name="phone1" Type="varchar" MaxLength="50" />
+          <Property Name="phone2" Type="varchar" MaxLength="50" />
+          <Property Name="mobile" Type="varchar" MaxLength="50" />
+          <Property Name="synoik" Type="varchar" MaxLength="50" />
+          <Property Name="tk" Type="varchar" MaxLength="50" />
+          <Property Name="poli" Type="varchar" MaxLength="50" />
+          <Property Name="notes" Type="varchar" MaxLength="2000" />
+          <Property Name="code" Type="varchar" MaxLength="50" />
+          <Property Name="Field1" Type="varchar" MaxLength="50" />
+          <Property Name="Field2" Type="varchar" MaxLength="50" />
+          <Property Name="Field3" Type="varchar" MaxLength="50" />
+          <Property Name="Field4" Type="varchar" MaxLength="50" />
+          <Property Name="Field5" Type="varchar" MaxLength="50" />
+          <Property Name="edit" Type="bit" Nullable="false" />
+          <Property Name="user" Type="varchar" MaxLength="255" />
+          <Property Name="contractor_name" Type="varchar" MaxLength="50" />
+          <Property Name="discount_id" Type="smallint" />
+          <Property Name="doy_id" Type="smallint" />
+          <Property Name="poli_id" Type="smallint" />
+          <Property Name="country" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="website" Type="varchar" MaxLength="50" />
+          <Property Name="fpa_zone_id" Type="int" />
+          <Property Name="ship_type_id" Type="smallint" />
+          <Property Name="paym_type_id" Type="smallint" />
+          <Property Name="photos" Type="varchar" MaxLength="500" />
+          <Property Name="offers" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityContainer Name="Clima1_DBModelStoreContainer">
+          <EntitySet Name="customer" EntityType="Self.customer" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [customer].[cust_id] AS [cust_id], 
+    [customer].[sir_name] AS [sir_name], 
+    [customer].[name] AS [name], 
+    [customer].[payed] AS [payed], 
+    [customer].[address] AS [address], 
+    [customer].[phone1] AS [phone1], 
+    [customer].[phone2] AS [phone2], 
+    [customer].[mobile] AS [mobile], 
+    [customer].[synoik] AS [synoik], 
+    [customer].[tk] AS [tk], 
+    [customer].[poli] AS [poli], 
+    [customer].[notes] AS [notes], 
+    [customer].[code] AS [code], 
+    [customer].[Field1] AS [Field1], 
+    [customer].[Field2] AS [Field2], 
+    [customer].[Field3] AS [Field3], 
+    [customer].[Field4] AS [Field4], 
+    [customer].[Field5] AS [Field5], 
+    [customer].[edit] AS [edit], 
+    [customer].[user] AS [user], 
+    [customer].[contractor_name] AS [contractor_name], 
+    [customer].[discount_id] AS [discount_id], 
+    [customer].[doy_id] AS [doy_id], 
+    [customer].[poli_id] AS [poli_id], 
+    [customer].[country] AS [country], 
+    [customer].[email] AS [email], 
+    [customer].[website] AS [website], 
+    [customer].[fpa_zone_id] AS [fpa_zone_id], 
+    [customer].[ship_type_id] AS [ship_type_id], 
+    [customer].[paym_type_id] AS [paym_type_id], 
+    [customer].[photos] AS [photos], 
+    [customer].[offers] AS [offers]
+    FROM [dbo].[customer] AS [customer]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Clima1_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="customer">
+          <Key>
+            <PropertyRef Name="cust_id" />
+            <PropertyRef Name="payed" />
+            <PropertyRef Name="edit" />
+          </Key>
+          <Property Name="cust_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sir_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="payed" Type="Boolean" Nullable="false" />
+          <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="phone1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="phone2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="synoik" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="tk" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="poli" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="notes" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Field1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Field2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Field3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Field4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Field5" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="edit" Type="Boolean" Nullable="false" />
+          <Property Name="user" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="contractor_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="discount_id" Type="Int16" />
+          <Property Name="doy_id" Type="Int16" />
+          <Property Name="poli_id" Type="Int16" />
+          <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="website" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="fpa_zone_id" Type="Int32" />
+          <Property Name="ship_type_id" Type="Int16" />
+          <Property Name="paym_type_id" Type="Int16" />
+          <Property Name="photos" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="offers" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="Clima1_DBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="customer" EntityType="Self.customer" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Clima1_DBModelStoreContainer" CdmEntityContainer="Clima1_DBEntities">
+          <EntitySetMapping Name="customer">
+            <EntityTypeMapping TypeName="Clima1_DBModel.customer">
+              <MappingFragment StoreEntitySet="customer">
+                <ScalarProperty Name="cust_id" ColumnName="cust_id" />
+                <ScalarProperty Name="sir_name" ColumnName="sir_name" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="payed" ColumnName="payed" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="phone1" ColumnName="phone1" />
+                <ScalarProperty Name="phone2" ColumnName="phone2" />
+                <ScalarProperty Name="mobile" ColumnName="mobile" />
+                <ScalarProperty Name="synoik" ColumnName="synoik" />
+                <ScalarProperty Name="tk" ColumnName="tk" />
+                <ScalarProperty Name="poli" ColumnName="poli" />
+                <ScalarProperty Name="notes" ColumnName="notes" />
+                <ScalarProperty Name="code" ColumnName="code" />
+                <ScalarProperty Name="Field1" ColumnName="Field1" />
+                <ScalarProperty Name="Field2" ColumnName="Field2" />
+                <ScalarProperty Name="Field3" ColumnName="Field3" />
+                <ScalarProperty Name="Field4" ColumnName="Field4" />
+                <ScalarProperty Name="Field5" ColumnName="Field5" />
+                <ScalarProperty Name="edit" ColumnName="edit" />
+                <ScalarProperty Name="user" ColumnName="user" />
+                <ScalarProperty Name="contractor_name" ColumnName="contractor_name" />
+                <ScalarProperty Name="discount_id" ColumnName="discount_id" />
+                <ScalarProperty Name="doy_id" ColumnName="doy_id" />
+                <ScalarProperty Name="poli_id" ColumnName="poli_id" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="website" ColumnName="website" />
+                <ScalarProperty Name="fpa_zone_id" ColumnName="fpa_zone_id" />
+                <ScalarProperty Name="ship_type_id" ColumnName="ship_type_id" />
+                <ScalarProperty Name="paym_type_id" ColumnName="paym_type_id" />
+                <ScalarProperty Name="photos" ColumnName="photos" />
+                <ScalarProperty Name="offers" ColumnName="offers" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Clima1_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="cust_id" />
+      <PropertyRef Name="payed" />
+      <PropertyRef Name="edit" />
+    </Key>
+    <Property Name="cust_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sir_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="payed" Type="Boolean" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="phone1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="phone2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="synoik" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="tk" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="poli" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="notes" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Field1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Field2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Field3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Field4" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Field5" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="edit" Type="Boolean" Nullable="false" />
+    <Property Name="user" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="contractor_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="discount_id" Type="Int16" />
+    <Property Name="doy_id" Type="Int16" />
+    <Property Name="poli_id" Type="Int16" />
+    <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="website" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fpa_zone_id" Type="Int32" />
+    <Property Name="ship_type_id" Type="Int16" />
+    <Property Name="paym_type_id" Type="Int16" />
+    <Property Name="photos" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="offers" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="Clima1_DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="customer" EntityType="Self.customer" />
+  </EntityContainer>
+</Schema>
