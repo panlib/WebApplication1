@@ -17,10 +17,9 @@ namespace WebApplication1.Controllers
         }
         public IHttpActionResult Get(int id)
         {
-            foreach (customer cust in db.customer)
-            {
-                if (cust.cust_id == id) return Ok(cust);
-            }
+            IEnumerable<customer> subset = from g in db.customer.ToList() where g.cust_id == id orderby g.sir_name select g;
+            if (subset != null)
+                return Ok(subset);
             return NotFound();
         }
     }
